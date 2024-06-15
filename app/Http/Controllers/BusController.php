@@ -42,7 +42,7 @@ class BusController extends Controller
                                 'name' => $value['stop_name'],
                             ])->save();
                             // On rajoute 100 a notre offset pour pouvoir récuperer les prochaines données
-                            $offset = +100;
+                            $offset += 100;
                         }
                     }
                 }

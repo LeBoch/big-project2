@@ -14,10 +14,14 @@ class DatabaseSeeder extends Seeder
     public function run(): void
     {
         // User::factory(10)->create();
+        $bikeController = new \App\Http\Controllers\BikeController();
+        $carController = new \App\Http\Controllers\CarController();
+        $tramController = new \App\Http\Controllers\TramController();
+        $busController = new \App\Http\Controllers\BusController();
 
-        User::factory()->create([
-            'name' => 'Test User',
-            'email' => 'test@example.com',
-        ]);
+        $bikeController->fetchData();
+        $carController->fetchData();
+        $tramController->fetchData();
+        $busController->fetchData();
     }
 }
