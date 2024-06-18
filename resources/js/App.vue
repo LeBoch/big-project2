@@ -69,7 +69,7 @@ import {ref} from "vue";
 const navigation = [
     {name: 'Accueil', path: '/'},
     {name: 'Carte', path: '/map'},
-    // {name: 'A Propos', path: '/policy'},
+    {name: 'Mentions Légales', path: '/policy'},
     // {name: 'Mention Légale', path: '#'},
 ]
 

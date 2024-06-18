@@ -8,9 +8,6 @@
     <title>Laravel</title>
 </head>
 <body class="h-screen overflow-y-hidden">
-<h3 class="text-3xl font-bold underline text-red-300">
-    Hello world!
-</h3>
 <div id="app"></div>
 </body>
 </html>
