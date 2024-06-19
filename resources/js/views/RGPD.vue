@@ -14,7 +14,7 @@
                             </div>
                             {{ feature.name }}
                         </dt>
-                        <dd class="mt-2 text-base leading-7 text-gray-600">{{ feature.description }}</dd>
+                        <dd class="mt-2 text-base leading-7 text-gray-600" v-html="feature.description"/>
                     </div>
                 </dl>
             </div>
@@ -28,16 +28,12 @@ import { ArrowPathIcon, CloudArrowUpIcon, FingerPrintIcon, LockClosedIcon } from
 const features = [
     {
         name: "Identification de l’éditeur du site :",
-        description: "Entreprise Démo SARL 123 Rue de l’Exemple, 75000 Paris, France +33 1 23 45 67 89, bochsler.enzo@gmail.com",
-        icon: CloudArrowUpIcon
+        description: "Entreprise Démo SARL 123 Rue de l’Exemple, 75000 Paris France <br>+33 1 23 45 67 89 <br>bochsler.enzo@gmail.com",        icon: CloudArrowUpIcon
     },
     {
         name: 'Hébergement du site :',
         description:
-            'Nom de l’hébergeur : Hébergeur Démo SAS\n' +
-            'Adresse : 456 Avenue de l’Hébergement, 69000 Lyon, France\n' +
-            'Numéro de téléphone : +33 4 56 78 90 12\n' +
-            'Adresse e-mail : contact@hebergeur-demo.com',
+            "Hébergeur SAS <br> 456 Avenue de l’Hébergement, 69000 Lyon, France +33 4 56 78 90 12 <br> contact@hebergeur-demo.com",
         icon: LockClosedIcon,
     },
     {
